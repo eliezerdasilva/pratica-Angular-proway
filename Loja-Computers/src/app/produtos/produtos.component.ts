@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduto, produtos } from '../produtos';
+import { ProdutoService } from '../produto.service';
 
 @Component({
   selector: 'app-produtos',
@@ -7,8 +8,10 @@ import { IProduto, produtos } from '../produtos';
   styleUrl: './produtos.component.css',
 })
 export class ProdutosComponent implements OnInit {
-  produtos: IProduto[] = produtos;
+  produtos: IProduto[] | undefined;
+
+  constructor(private produtosService: ProdutoService) {}
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.produtos = this.produtosService.getAll();
   }
 }
