@@ -4,11 +4,12 @@ import { IProdutoCarrinho } from './produtos';
 @Injectable({
   providedIn: 'root'
 })
+
 export class CarrinhoService {
   itens : IProdutoCarrinho[] = [];
   constructor() { }
   obtemCarrinho(){
-    this.itens =  JSON.parse(localStorage.getItem("carrinho")||"")
+    this.itens =  JSON.parse(localStorage.getItem("carrinho")||"[]")
     return this.itens
   }
   adicionarAoCarrinho(produto: IProdutoCarrinho){

@@ -1,6 +1,6 @@
 .cart-title {
     font-size: 44px;
-    color: var(--gray);
+    color: gray;
     font-weight: 700;
     padding: 8px 0;
 }
@@ -37,7 +37,7 @@ img {
 
 .cart-total {
     font-size: 24px;
-    color: var(--gray);
+    color: gray;
     font-weight: 700;
     padding: 8px 0;
 }
@@ -48,7 +48,7 @@ input {
 }
 
 .buy-button {
-    background-color: var(--blue);
+    background-color: blue;
     border: none;
     color: white;
     padding: 10px;

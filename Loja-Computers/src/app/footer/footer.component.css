@@ -1,6 +1,6 @@
 .footer {
-    background-color: rgb(230, 230, 230);        
-    color:gray;
+    background-color: rgb(224, 248, 248);        
+    color:rgb(184, 204, 204);
     font-size: 18px;
 }
 
@@ -14,10 +14,10 @@
 .footer__copyright {
     text-align: center;
     margin-top: 20px;
-    background-color: rgb(185, 182, 182);    
+    background-color:rgb(205, 228, 228);    
     font-weight: bold;
     padding: 20px;
-    color: gray;
+    color:rgb(136, 168, 168);
 }
 
 .footer__title {
